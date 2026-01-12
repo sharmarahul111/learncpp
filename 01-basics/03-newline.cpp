@@ -9,5 +9,5 @@ int main(){
   // this is efficient, since multiple outputs
   // can be batched together
   std::cout << "Hi" << 5 << std::endl;
-
+  return 0;
 }
