@@ -2,8 +2,8 @@
 Github graph is like Duolingo streak. Good for consistency.
 
 ## Some technicalities to note (g++)
-- disable compiler extensions with `-pedantic-errors` [1](https://www.learncpp.com/cpp-tutorial/configuring-your-compiler-compiler-extensions/)
-- for debug builds `-ggdb` and `-O2 -DNDEBUG` for release builds [1](https://www.learncpp.com/cpp-tutorial/configuring-your-compiler-build-configurations/)
+- disable compiler extensions with `-pedantic-errors` [[1](https://www.learncpp.com/cpp-tutorial/configuring-your-compiler-compiler-extensions/)]
+- for debug builds `-ggdb` and `-O2 -DNDEBUG` for release builds [[1](https://www.learncpp.com/cpp-tutorial/configuring-your-compiler-build-configurations/)]
 - better diagnostic messages `-Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion`
 
 ## NOTE:
