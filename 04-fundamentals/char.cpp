@@ -11,5 +11,8 @@ int main(){
     std::cout << "You denied the operation.";
   }
   std::cout << '\n';
+  std::cin.get(c);
+  std::cout << "Next char including whitespace:(" << c << ")\n";
+
   return 0;
 }
