@@ -20,17 +20,19 @@ class Complex
 			angle = atan2(y,x);
 		}
 		Complex(){}
-		Complex(char, int, int);
+		Complex(char, float, float);
 		friend Complex operator+(Complex, Complex);
 		friend Complex operator-(Complex, Complex);
-		
+		Complex operator*(Complex c){
+			return Complex('*', x*c.x+y*c.y, x*c.y+y*c.x);
+		}
 		void display()
 		{
 			cout << "(" << x << ", " << y << ")" << endl;
-			cout << "(r, theta) = (" << magnitude << ", " << angle << ")" << endl;
+			// cout << "(r, theta) = (" << magnitude << ", " << angle << ")" << endl;
 		}
 };
-Complex::Complex(char n, int ax=0,int ay=0)
+Complex::Complex(char n, float ax=0,float ay=0)
 {
 	name = n;
 	x = ax;
@@ -39,7 +41,7 @@ Complex::Complex(char n, int ax=0,int ay=0)
 }
 Complex operator+(Complex a, Complex b)
 {
-	Complex c(a.x+b.x, a.y+b.y);
+	Complex c('+', a.x+b.x, a.y+b.y);
 	c.polar();
 	return c;
 }
@@ -57,4 +59,5 @@ int main()
 	b.display();
 	(a-b).display();
 	(a-b).display();
+	(a*b).display();
 }
