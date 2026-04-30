@@ -11,7 +11,8 @@ class A
 			return a;
 		}
 };
-class B:A
+
+class B:A // same as class B: private A
 {
 	private:
 		int c;
