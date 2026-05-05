@@ -64,7 +64,7 @@ int main()
 	cout.setf(ios::scientific, ios::floatfield);
 	// cout.setf(ios::showpoint);
 	cout << f << endl;
-	cout.unsetf(ios::showpoint); // doesn't work
+	cout.unsetf(ios::fixed | ios::scientific); // hack to restore notation
 	cout << f << endl;
 
 	return 0;
